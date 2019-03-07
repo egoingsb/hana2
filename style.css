@@ -1,0 +1,23 @@
+@media(max-width:600px) {
+    h1{
+        border:5px solid blue;
+    }
+}
+@media(min-width:600px) {
+    h1 {
+        border-bottom: 1px solid purple;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+
+    ol {
+        border-right: 4px solid tomato;
+        width: 150px;
+        margin-top: 0;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+    }
+}
