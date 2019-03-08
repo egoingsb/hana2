@@ -5,10 +5,27 @@
     <title>WEB - html</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <style>
+        #nightMode{
+            float:right;
+            margin:1rem;
+        }
+    </style>
 </head>
 
 <body>
     <h1><a href="index.html">WEB</a></h1>
+    <input id="nightMode" type="button" value="night" onclick="
+        if(this.value === 'night'){
+            document.querySelector('body').style.color='white';
+            document.querySelector('body').style.backgroundColor='black';
+            this.value = 'day';
+        } else {
+            document.querySelector('body').style.color='black';
+            document.querySelector('body').style.backgroundColor='white';
+            this.value = 'night';
+        }
+    ">
     <div id="container">
         <ol>
             <li><a href="1.html">HTML</a></li>
