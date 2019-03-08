@@ -18,12 +18,14 @@
         <div id="article">
             <input type="text" onchange="alert('changed');">
             <input type="button" value="night" onclick="
-                document.querySelector('body').style.backgroundColor = 'black';
-                document.querySelector('body').style.color = 'white';
+                var body = document.querySelector('body');
+                body.style.backgroundColor = 'black';
+                body.style.color = 'white';
             ">
             <input type="button" value="day" onclick="
-                document.querySelector('body').style.backgroundColor = 'white';
-                document.querySelector('body').style.color = 'black';
+                var body = document.querySelector('body');
+                body.style.backgroundColor = 'white';
+                body.style.color = 'black';
             ">
             <h2>HTML</h2>
             <a target="_blank" href="http://w3c.org">HTML</a> is <u>Hyper<strong>Text</strong> Markup</u> Langauge
