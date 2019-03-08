@@ -7,22 +7,19 @@
         document.write(a+b);
     </script>
     <h1>Example</h1>
-    <script>
-        var name = 'egoing';
+    <!-- <script>
+        var name = prompt('name?');
         document.write('Lorem '+name+' dolor sit amet, consectetur adipisicing elit. Consequuntur debitis voluptatibus odio nesciunt tempora sint egoing error, illum illo dolore aperiam mollitia sed quia praesentium voluptates voluptatum '+name+' nulla vel');
-    </script>
-    
-
-
-
-
-
-
-
-
-
-
-
-    Lorem egoing dolor sit amet, consectetur adipisicing elit. Consequuntur debitis voluptatibus odio nesciunt tempora sint egoing error, illum illo dolore aperiam mollitia sed quia praesentium voluptates voluptatum egoing nulla vel
+    </script> -->
+    <div>
+        name : <input type="text" id="name" onchange="
+                var name = document.querySelector('#name').value;
+                var result = 'Lorem '+name+' dolor sit amet, consectetur adipisicing elit. Consequuntur debitis voluptatibus odio nesciunt tempora sint egoing error, illum illo dolore aperiam mollitia sed quia praesentium voluptates voluptatum '+name+' nulla vel';
+                document.querySelector('#res').value = result;
+        ">
+    </div>
+    <div>
+        result : <textarea id="res"></textarea>
+    </div>
 </body>
 </html>
