@@ -4,8 +4,8 @@
 http://bit.ly/2Hm9MKl
 
 # 가상 인터넷에 설치해주세요. 
-[git](https://git-scm.com/)
-[vscode](https://code.visualstudio.com/)
+- [git](https://git-scm.com/)
+- [vscode](https://code.visualstudio.com/)
 
 # 실시간 코드 공유 
 https://www.dropbox.com/sh/uka8qvxmxcwnygk/AABp8CQXiAOX23yZ7aN4RMmva?dl=0
