@@ -18,13 +18,17 @@
             <li><a href="5.html">database</a></li>
         </ol>
         <div id="article">
-            <input type="button" value="night" onclick="
-                document.querySelector('body').style.backgroundColor = 'black';
-                document.querySelector('body').style.color = 'white';    
-            ">
-            <input type="button" value="day" onclick="
-                document.querySelector('body').style.backgroundColor = 'white';
-                document.querySelector('body').style.color = 'black';    
+            <input type="button" id="sdfkh" value="night" onclick="
+                // 만약 이 버튼의 value 값이 night라면
+                if(this.value === 'night'){
+                    document.querySelector('body').style.backgroundColor = 'black';
+                    document.querySelector('body').style.color = 'white';  
+                    this.value = 'day';
+                } else {// 아니라면
+                    document.querySelector('body').style.backgroundColor = 'white';
+                    document.querySelector('body').style.color = 'black';   
+                    this.value = 'night';
+                }
             ">
             <h2>Database</h2>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum quae pariatur, labore itaque voluptatem
