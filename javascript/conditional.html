@@ -1,9 +1,23 @@
 <html>
 <body>
     <h1>Conditional Statements</h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.js"></script>
     <script>
-        var myPassword = '1234';
-        var inputPassword = prompt('Password?');
+        console.log(1);
+        if(false){
+            console.log('2a');
+            console.log('3a');
+        } else {
+            console.log('2b');
+            console.log('3b');
+        }
+        console.log(4);
+    </script>
+
+    <h2>Example</h2>
+    <script>
+        var myPassword = '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4';
+        var inputPassword = sha256(prompt('Password?'));
         if(inputPassword === myPassword){
         // myPassword와 inputPassword가 같다면?
             alert('안녕하세요. 주인님? ^^ ^^');
