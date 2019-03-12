@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <h1>function</h1>
+        <script>
+            function one_plus_one(){
+                var left = 1;
+                var right = 2;
+                alert(left+right);
+            }
+
+            function sum(left, right){
+                // alert(left + right);
+                return left + right;
+            }
+        </script>
+        <input type="button" value="alert => 1+2" onclick="
+            alert(sum(1,2));
+        ">
+        <input type="button" value="change body => 2+3" onclick="
+            document.querySelector('body').innerHTML = sum(2,3);
+        ">
+        <input type="button" value="email => 3+4" onclick="
+            // email('egoing@gmail', sum(3,4));
+        ">
+    </body>
+</html>

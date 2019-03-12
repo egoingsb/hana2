@@ -18,31 +18,36 @@
             <li><a href="5.html">database</a></li>
         </ol>
         <div id="article">
-            <input type="button" id="sdfkh" value="night" onclick="
-                // 만약 이 버튼의 value 값이 night라면
-                if(this.value === 'night'){
+            <script>
+                function toNight(){
                     document.querySelector('body').style.backgroundColor = 'black';
-                    document.querySelector('body').style.color = 'white';  
-                    this.value = 'day';
-
-
+                    document.querySelector('body').style.color = 'white';
                     var links = document.querySelectorAll('a');
                     var i = 0;
                     while(i < links.length){
                         links[i].style.color='white';
                         i = i + 1;
                     }
-                } else {// 아니라면
+                }   
+                function toDay(){
                     document.querySelector('body').style.backgroundColor = 'white';
-                    document.querySelector('body').style.color = 'black';   
-                    this.value = 'night';
-
+                    document.querySelector('body').style.color = 'black'; 
                     var links = document.querySelectorAll('a');
                     var i = 0;
                     while(i < links.length){
                         links[i].style.color='black';
                         i = i + 1;
-                    }
+                    }  
+                } 
+            </script>
+            <input type="button" id="sdfkh" value="night" onclick="
+                // 만약 이 버튼의 value 값이 night라면
+                if(this.value === 'night'){
+                    toNight();
+                    this.value = 'day';
+                } else {// 아니라면
+                    toDay();
+                    this.value = 'night';
                 }
             ">
             <h2>Database</h2>
