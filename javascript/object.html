@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <h1>Object</h1>
+        <script>
+            var arr = ['egoing', 'duru', 'taeho'];
+            console.log(arr[0]);
+            
+            var members = {
+                'developer':'egoing', 
+                'account':'duru',
+                'designer':'leezche',
+                'printAllMember':function(){
+                    console.log(this.developer);
+                    console.log(this.account);
+                    console.log(this.designer);
+                }
+            }
+            console.log(members.printAllMember());
+
+
+            // var Math = {
+            //     PI:3.14,
+            //     floor:function(input){
+            //         return // 내림하는 코드
+            //     }
+            // }
+            // Math.PI // 3.14
+            // Math.floor(1.2) // 1
+        </script>
+    </body>
+</html>
